@@ -21,7 +21,7 @@ const history = createBrowserHistory();
 
 export default () => {
   const [isSignedIn, setIsSignedIn] = useState(false);
-
+  console.log('Container App Rendered');
   useEffect(() => {
     if (isSignedIn) {
       history.push('/dashboard');
